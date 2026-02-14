@@ -46,7 +46,7 @@ class CalculatorViewController: UIViewController {
   func setupUI() {
     let buttonStack = UIStackView()
     buttonStack.axis = .vertical
-    buttonStack.spacing = 16
+    buttonStack.spacing = 8
     
     let safeArea = view.safeAreaLayoutGuide
     view.addSubview(buttonStack)
@@ -86,7 +86,7 @@ class CalculatorViewController: UIViewController {
     view.addSubview(displayLabel)
     displayLabel.anchor(
       trailing: buttonStack.trailingAnchor, 
-      trailingConstant: 16,
+      trailingConstant: 8,
       bottom: buttonStack.topAnchor, 
       bottomConstant: 16,
       leading: buttonStack.leadingAnchor,

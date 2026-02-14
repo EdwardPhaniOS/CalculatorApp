@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35002CF02F40AD3000CCFC31 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35002CEF2F40AD3000CCFC31 /* CalculatorView.swift */; };
+		35002CF32F40C36000CCFC31 /* CalculatorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35002CF22F40C35F00CCFC31 /* CalculatorVM.swift */; };
 		354D26952F4082160036F940 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354D26942F4082160036F940 /* UIColor+Ext.swift */; };
 		355D4F242F3EDEEA0017C5E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D4F192F3EDEEA0017C5E7 /* AppDelegate.swift */; };
 		355D4F252F3EDEEA0017C5E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D4F202F3EDEEA0017C5E7 /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35002CEF2F40AD3000CCFC31 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		35002CF22F40C35F00CCFC31 /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
 		354D26942F4082160036F940 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		355D4F192F3EDEEA0017C5E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355D4F1A2F3EDEEA0017C5E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,20 +49,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35002CEE2F40AD1E00CCFC31 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				355D4F362F3F03D20017C5E7 /* CalculatorViewController.swift */,
+				355D4F3A2F3F0E1F0017C5E7 /* CalculatorViewModel.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		35002CF12F40AD7400CCFC31 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				35002CEF2F40AD3000CCFC31 /* CalculatorView.swift */,
+				35002CF22F40C35F00CCFC31 /* CalculatorVM.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		355D4F232F3EDEEA0017C5E7 /* CalculatorApp */ = {
 			isa = PBXGroup;
 			children = (
-				355D4F192F3EDEEA0017C5E7 /* AppDelegate.swift */,
-				355D4F1A2F3EDEEA0017C5E7 /* Assets.xcassets */,
 				355D4F1B2F3EDEEA0017C5E7 /* Info.plist */,
+				355D4F192F3EDEEA0017C5E7 /* AppDelegate.swift */,
+				355D4F382F3F03F60017C5E7 /* ExpressionEvaluator.swift */,
+				355D4F202F3EDEEA0017C5E7 /* SceneDelegate.swift */,
+				354D26942F4082160036F940 /* UIColor+Ext.swift */,
+				355D4F212F3EDEEA0017C5E7 /* UIView+Ext.swift */,
+				355D4F1A2F3EDEEA0017C5E7 /* Assets.xcassets */,
 				355D4F1D2F3EDEEA0017C5E7 /* LaunchScreen.storyboard */,
 				355D4F1F2F3EDEEA0017C5E7 /* Main.storyboard */,
-				355D4F202F3EDEEA0017C5E7 /* SceneDelegate.swift */,
-				355D4F362F3F03D20017C5E7 /* CalculatorViewController.swift */,
-				355D4F3A2F3F0E1F0017C5E7 /* CalculatorViewModel.swift */,
-				355D4F382F3F03F60017C5E7 /* ExpressionEvaluator.swift */,
-				355D4F212F3EDEEA0017C5E7 /* UIView+Ext.swift */,
-				354D26942F4082160036F940 /* UIColor+Ext.swift */,
+				35002CF12F40AD7400CCFC31 /* SwiftUI */,
+				35002CEE2F40AD1E00CCFC31 /* UIKit */,
 			);
 			path = CalculatorApp;
 			sourceTree = "<group>";
@@ -157,8 +179,10 @@
 				355D4F242F3EDEEA0017C5E7 /* AppDelegate.swift in Sources */,
 				355D4F392F3F03F60017C5E7 /* ExpressionEvaluator.swift in Sources */,
 				355D4F252F3EDEEA0017C5E7 /* SceneDelegate.swift in Sources */,
+				35002CF02F40AD3000CCFC31 /* CalculatorView.swift in Sources */,
 				355D4F372F3F03D20017C5E7 /* CalculatorViewController.swift in Sources */,
 				355D4F3B2F3F0E1F0017C5E7 /* CalculatorViewModel.swift in Sources */,
+				35002CF32F40C36000CCFC31 /* CalculatorVM.swift in Sources */,
 				355D4F262F3EDEEA0017C5E7 /* UIView+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,10 +19,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let scene = (scene as? UIWindowScene) else { return }
     
+    setUpWindow(usingSwiftUI: true, scene: scene)
+  }
+  
+  func setUpWindow(usingSwiftUI: Bool = false, scene: UIWindowScene) {
     window = UIWindow(windowScene: scene)
-    let vc = CalculatorViewController()
-    vc.configure()
-    window?.rootViewController = vc
+    
+    if usingSwiftUI {
+      let contentView = CalculatorView()
+      let hostingController = UIHostingController(rootView: contentView)
+      window?.rootViewController = hostingController
+    } else {
+      let vc = CalculatorViewController()
+      vc.configure()
+      window?.rootViewController = vc
+    }
+    
     window?.makeKeyAndVisible()
   }
 
