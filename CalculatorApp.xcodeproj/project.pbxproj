@@ -53,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				355D4F362F3F03D20017C5E7 /* CalculatorViewController.swift */,
-				355D4F3A2F3F0E1F0017C5E7 /* CalculatorViewModel.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -62,9 +61,59 @@
 			isa = PBXGroup;
 			children = (
 				35002CEF2F40AD3000CCFC31 /* CalculatorView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		35002CF42F40C94800CCFC31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				355D4F382F3F03F60017C5E7 /* ExpressionEvaluator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35002CF52F40C95300CCFC31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35002CF12F40AD7400CCFC31 /* SwiftUI */,
+				35002CEE2F40AD1E00CCFC31 /* UIKit */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35002CF62F40C99600CCFC31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				354D26942F4082160036F940 /* UIColor+Ext.swift */,
+				355D4F212F3EDEEA0017C5E7 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35002CF72F40CA2B00CCFC31 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				35002CF82F40CA4E00CCFC31 /* SwiftUI */,
+				35002CF92F40CA5700CCFC31 /* UIKit */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		35002CF82F40CA4E00CCFC31 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
 				35002CF22F40C35F00CCFC31 /* CalculatorVM.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		35002CF92F40CA5700CCFC31 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				355D4F3A2F3F0E1F0017C5E7 /* CalculatorViewModel.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		355D4F232F3EDEEA0017C5E7 /* CalculatorApp */ = {
@@ -72,15 +121,14 @@
 			children = (
 				355D4F1B2F3EDEEA0017C5E7 /* Info.plist */,
 				355D4F192F3EDEEA0017C5E7 /* AppDelegate.swift */,
-				355D4F382F3F03F60017C5E7 /* ExpressionEvaluator.swift */,
 				355D4F202F3EDEEA0017C5E7 /* SceneDelegate.swift */,
-				354D26942F4082160036F940 /* UIColor+Ext.swift */,
-				355D4F212F3EDEEA0017C5E7 /* UIView+Ext.swift */,
 				355D4F1A2F3EDEEA0017C5E7 /* Assets.xcassets */,
+				35002CF62F40C99600CCFC31 /* Extensions */,
 				355D4F1D2F3EDEEA0017C5E7 /* LaunchScreen.storyboard */,
 				355D4F1F2F3EDEEA0017C5E7 /* Main.storyboard */,
-				35002CF12F40AD7400CCFC31 /* SwiftUI */,
-				35002CEE2F40AD1E00CCFC31 /* UIKit */,
+				35002CF72F40CA2B00CCFC31 /* ViewModels */,
+				35002CF42F40C94800CCFC31 /* Model */,
+				35002CF52F40C95300CCFC31 /* Views */,
 			);
 			path = CalculatorApp;
 			sourceTree = "<group>";
