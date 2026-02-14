@@ -110,9 +110,6 @@ class CalculatorViewController: UIViewController {
     } else if title == "=" {
       button.backgroundColor = UIColor.skyBlue
       button.setTitleColor(UIColor.white, for: .normal)
-    } else if title == "=" {
-      button.backgroundColor = UIColor.skyBlue
-      button.setTitleColor(UIColor.white, for: .normal)
     } else {
       button.backgroundColor = UIColor.slateGray
       button.setTitleColor(UIColor.white, for: .normal)
@@ -135,8 +132,14 @@ class CalculatorViewController: UIViewController {
       displayLabel.text = result
     }
     
-    viewModel.displayErrorCallback = { message in
+    viewModel.displayErrorCallback = { [weak self] message in
+      guard let self = self else { return }
       print("DEBUG - error: \(message)")
+      
+      displayLabel.textColor = UIColor.crimson
+      Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { _ in
+        self.displayLabel.textColor = UIColor.royalBlue
+      }
     }
   }
 }

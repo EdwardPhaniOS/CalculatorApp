@@ -158,7 +158,7 @@ class CalculatorViewModel {
       showingResult = true
       updateDisplay()
     } catch {
-      displayErrorCallback?("Error")
+      displayErrorCallback?(error.localizedDescription)
     }
   }
   

@@ -32,7 +32,7 @@ struct ExpressionEvaluator {
   private static func tokenize(expression: String) -> [String] {
     let exp = expression
       .replacingOccurrences(of: "(", with: " ( ")
-      .replacingOccurrences(of: ")", with: " )")
+      .replacingOccurrences(of: ")", with: " ) ")
     
     return exp.components(separatedBy: " ").filter { !$0.isEmpty }
   }
