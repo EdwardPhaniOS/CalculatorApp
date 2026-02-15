@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let scene = (scene as? UIWindowScene) else { return }
     
-    setUpWindow(usingSwiftUI: true, scene: scene)
+    setUpWindow(usingSwiftUI: false, scene: scene)
   }
   
   func setUpWindow(usingSwiftUI: Bool = false, scene: UIWindowScene) {
